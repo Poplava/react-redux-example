@@ -1,9 +1,12 @@
 module.exports = {
-  entry: './src/apps/landing/index.js',
+  entry: {
+    landing: './src/apps/landing/index.js',
+    dashboard: './src/apps/dashboard/index.js'
+  },
 
   output: {
     path: __dirname + '/build',
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
 
   module: {
